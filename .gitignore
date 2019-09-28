@@ -1,0 +1,12 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+node_modules
+.idea/.gitignore
+.idea/itemizr.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+data/*
+node_modules/
+spotify-extracts/
+creds.js
