@@ -1,0 +1,19 @@
+{
+  "name": "music-extractor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "atob": "^2.1.2",
+    "file-system": "^2.2.2",
+    "osmosis": "^1.1.10",
+    "requirejs": "^2.3.6",
+    "spotify-web-api-node": "^4.0.0"
+  }
+}
