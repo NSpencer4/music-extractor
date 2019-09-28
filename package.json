@@ -10,9 +10,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "api-deezer": "^1.0.2",
     "atob": "^2.1.2",
+    "deezer-api": "git+https://notabug.org/RemixDevs/deezer-api.git#master",
+    "express": "^4.17.1",
     "file-system": "^2.2.2",
+    "node-deezer": "^0.3.3",
     "osmosis": "^1.1.10",
+    "request": "^2.88.0",
+    "requestretry": "^4.0.0",
     "requirejs": "^2.3.6",
     "spotify-web-api-node": "^4.0.0"
   }
