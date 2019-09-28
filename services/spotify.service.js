@@ -26,15 +26,15 @@ class SpotifyService {
 
     getArtistTracks() {
         //TODO
-
     }
 
-    getPlaylistTracks(playlist) {
+    getPlaylistTracks(playlistID) {
+        let self = this;
         this.spotifyApi.getPlaylistTracks(playlistID).then(
             function (data) {
-                console.log('Playlist tracks', data.body);
-                this.fs.writeFile(`./spotify-extracts/playlist-tracks/${Date.now()}/extract.json`, JSON.stringify(data.body), (err) => {
-                    // console.log(list);
+                // console.log('Playlist tracks', data.body);
+                self.fs.writeFile(`./spotify-extracts/playlists/${playlistID}/${Date.now()}/extract.json`,
+                    JSON.stringify(data.body), () => {
                 });
             },
             function (err) {

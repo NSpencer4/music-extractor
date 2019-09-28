@@ -1,9 +1,13 @@
+const Config = require('./config');
 const SpotifyService = require('./services/spotify.service');
-const spotifyServiceInstance = new SpotifyService();
+const SpotifyServiceInstance = new SpotifyService();
 
-spotifyServiceInstance.getSpotifyAccessToken().then(
+SpotifyServiceInstance.getSpotifyAccessToken().then(
     function(data) {
-        spotifyServiceInstance.setSpotifyAccessToken(data);
+        SpotifyServiceInstance.setSpotifyAccessToken(data);
+        Config.playlists.forEach((playlist) => {
+            SpotifyServiceInstance.getPlaylistTracks(playlist);
+        })
     },
     function(err) {
         console.log(
