@@ -9,4 +9,4 @@ node_modules
 data/*
 node_modules/
 spotify-extracts/
-creds.js
+config.js
